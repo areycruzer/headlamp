@@ -11,6 +11,7 @@ docs/development/storybook/
 .plugins
 node_modules
 .idea/
+.worktrees/
 plugins/headlamp-plugin/headlamp-myfancy/
 plugins/examples/*/dist/
 .DS_Store
