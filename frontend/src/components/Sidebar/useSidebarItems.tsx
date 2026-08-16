@@ -261,6 +261,29 @@ export const useSidebarItems = (sidebarName: string = DefaultSidebars.IN_CLUSTER
         ],
       },
       {
+        name: 'devices',
+        label: t('glossary|Devices'),
+        icon: 'mdi:expansion-card',
+        subList: [
+          {
+            name: 'deviceClasses',
+            label: t('glossary|Device Classes'),
+          },
+          {
+            name: 'resourceSlices',
+            label: t('glossary|Resource Slices'),
+          },
+          {
+            name: 'resourceClaims',
+            label: t('glossary|Resource Claims'),
+          },
+          {
+            name: 'resourceClaimTemplates',
+            label: t('glossary|Resource Claim Templates'),
+          },
+        ],
+      },
+      {
         name: 'storage',
         label: t('glossary|Storage'),
         icon: 'mdi:database',

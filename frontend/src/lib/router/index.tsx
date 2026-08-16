@@ -93,6 +93,7 @@ import RoleBindingDetails from '../../components/role/BindingDetails';
 import RoleBindingList from '../../components/role/BindingList';
 import RoleDetails from '../../components/role/Details';
 import RoleList from '../../components/role/List';
+import { DeviceClassList, ResourceClaimList, ResourceClaimTemplateList, ResourceSliceList } from '../../components/dra/List';
 import { RuntimeClassDetails } from '../../components/runtimeClass/Details';
 import { RuntimeClassList } from '../../components/runtimeClass/List';
 import SecretDetails from '../../components/secret/Details';
@@ -736,6 +737,36 @@ const defaultRoutes: { [routeName: string]: Route } = {
     name: 'Lease',
     sidebar: 'leases',
     component: () => <LeaseDetails />,
+  },
+  deviceClasses: {
+    path: '/deviceclasses',
+    exact: true,
+    name: 'Device Classes',
+    sidebar: 'deviceClasses',
+    component: () => <DeviceClassList />,
+  },
+  resourceSlices: {
+    path: '/resourceslices',
+    exact: true,
+    name: 'Resource Slices',
+    sidebar: 'resourceSlices',
+    component: () => <ResourceSliceList />,
+  },
+  resourceClaims: {
+    path: '/resourceclaims',
+    exact: true,
+    name: 'Resource Claims',
+    sidebar: 'resourceClaims',
+    useClusterURL: true,
+    component: () => <ResourceClaimList />,
+  },
+  resourceClaimTemplates: {
+    path: '/resourceclaimtemplates',
+    exact: true,
+    name: 'Resource Claim Templates',
+    sidebar: 'resourceClaimTemplates',
+    useClusterURL: true,
+    component: () => <ResourceClaimTemplateList />,
   },
   runtimeClasses: {
     path: '/runtimeclasses',
